@@ -6,10 +6,13 @@
     </header>
     <body>    
         <div id="app">
-            <h1>{{message}}</h1>
-            <h2>{{getAuthor()}}</h2>
+            <!--<h1>{{message}}</h1>-->
+            <!--<h2>{{getAuthor()}}</h2>
             <h3>{{author}}</h3>
-            <h4>{{name}}</h4>
+            <h4>{{name}}</h4>-->            
+            <button v-on:click="toggleView">Toggle</button>
+            <h1 v-show="isViewed">You have viewed the page</h1>
+            <span style="font-size: 20px" v-html="intro"></span>
         </div>
     </body>
 

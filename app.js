@@ -8,7 +8,13 @@ var globalApp = (function(){
                 this.name = "M.G.Husny Ahamed";
                 return this.author;
             },
-
+            intro: 'Welcome to the vue world. <small>It is all about <b>Vue.js</b></small>',
+            isViewed: true            
+        },
+        methods: {
+            toggleView: function(){
+                this.isViewed = !this.isViewed
+            }
         }
     });
 
